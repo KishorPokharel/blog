@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.82.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Makefile &middot; Kishor Pokharel</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://kishorpokharel.github.io/blog/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://kishorpokharel.github.io/blog/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://kishorpokharel.github.io/blog/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://kishorpokharel.github.io/blog/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://kishorpokharel.github.io/blog/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="https://kishorpokharel.github.io/blog/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0f layout-reverse">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://kishorpokharel.github.io/blog/"><h1>Kishor Pokharel</h1></a>
+      <p class="lead">
+       I write things about programming 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://kishorpokharel.github.io/blog/">Home</a> </li>
+        <li><a href="https://github.com/KishorPokharel/"> Github </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2021. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Makefile</h1>
+  <time datetime=2021-08-08T23:29:24&#43;0545 class="post-date">Sun, Aug 8, 2021</time>
+  <h3 id="what-is-a-makefile">What is a makefile</h3>
+<p>A <code>Makefile</code> is a text file that defines a set of rules to be executed. Then with the help of <code>make</code> utility you can execute the <code>target</code> which runs all command inside that rule. If you want to follow along, make sure you have the <code>make</code> utility installed on your machine.</p>
+<h3 id="basic-syntax">Basic syntax</h3>
+<p>Here is what the syntax looks like</p>
+<pre><code>target: prerequisites
+&lt;TAB&gt;command
+</code></pre><p>The prerequisites can be other targets and they are optional.</p>
+<h3 id="hello-world">Hello World</h3>
+<p>Now that you have the basic syntax let&rsquo;s print hello world using <code>Makefile</code></p>
+<p>Create a file <code>Makefile</code></p>
+<pre><code>$ touch Makefile
+</code></pre><p>Add the following lines to the file</p>
+<pre><code>hello:
+	echo &quot;Hello World&quot;
+</code></pre><p>Now run <code>make</code> in the terminal. Make sure you&rsquo;re in the right folder. You should see something like this as output.</p>
+<pre><code>$ make
+echo &quot;Hello World&quot;
+Hello World
+</code></pre><p>Notice that the <code>make</code> echoes the actual command.</p>
+<h3 id="supress-echoing-of-actual-command">Supress echoing of actual command</h3>
+<p>We don&rsquo;t want the actual echo command to be printed. To supress echoing the actual command we can use <code>@</code> in front of command like this</p>
+<pre><code>hello:
+   @echo &quot;Hello World&quot;
+</code></pre><p>Now if you run <code>make</code> again you can see the following output.</p>
+<pre><code>$ make
+Hello World
+</code></pre><h3 id="comments-on-makefile">Comments on Makefile</h3>
+<p>You can use <code>#</code> to create comment</p>
+<pre><code>#this target says hello
+hello:
+	@echo &quot;Hello World&quot;
+</code></pre><h3 id="variables-and-environment-variables">Variables and Environment Variables</h3>
+<p>You can access environment variables using <code>${ENV}</code> this syntax.</p>
+<h3 id="shell-commands">Shell Commands</h3>
+<h3 id="conclusion">Conclusion</h3>
+
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
