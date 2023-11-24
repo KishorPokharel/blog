@@ -5,7 +5,18 @@
     <link>https://kishorpokharel.github.io/blog/posts/</link>
     <description>Recent content in Posts on Kishor Pokharel</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Aug 2021 23:29:24 +0545</lastBuildDate><atom:link href="https://kishorpokharel.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Nov 2023 07:54:11 +0545</lastBuildDate><atom:link href="https://kishorpokharel.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jq Notes</title>
+      <link>https://kishorpokharel.github.io/blog/posts/jq-notes/</link>
+      <pubDate>Fri, 24 Nov 2023 07:54:11 +0545</pubDate>
+      
+      <guid>https://kishorpokharel.github.io/blog/posts/jq-notes/</guid>
+      <description>Example 1 Suppose you have a json file data.json
+[ { &amp;#34;chapterNumber&amp;#34;: 1, &amp;#34;body&amp;#34;: &amp;#34;A or B or C?&amp;#34;, &amp;#34;options&amp;#34;: [&amp;#34;A&amp;#34;, &amp;#34;B&amp;#34;, &amp;#34;C&amp;#34;], &amp;#34;answer&amp;#34;: &amp;#34;A&amp;#34; }, { &amp;#34;chapterNumber&amp;#34;: 2, &amp;#34;body&amp;#34;: &amp;#34;D or E or F?&amp;#34;, &amp;#34;options&amp;#34;: [&amp;#34;D&amp;#34;, &amp;#34;E&amp;#34;, &amp;#34;F&amp;#34;], &amp;#34;answer&amp;#34;: &amp;#34;E&amp;#34; } ] and you want to use jq to transform it to
+[ { &amp;#34;chapterNumber&amp;#34;: 1, &amp;#34;body&amp;#34;: &amp;#34;A or B or C?&amp;#34;, &amp;#34;options&amp;#34;: [ { &amp;#34;text&amp;#34;: &amp;#34;A&amp;#34;, &amp;#34;correct&amp;#34;: true }, { &amp;#34;text&amp;#34;: &amp;#34;B&amp;#34;, &amp;#34;correct&amp;#34;: false }, { &amp;#34;text&amp;#34;: &amp;#34;C&amp;#34;, &amp;#34;correct&amp;#34;: false } ] }, { &amp;#34;chapterNumber&amp;#34;: 2, &amp;#34;body&amp;#34;: &amp;#34;D or E or F?</description>
+    </item>
+    
     <item>
       <title>Makefile</title>
       <link>https://kishorpokharel.github.io/blog/posts/makefile/</link>

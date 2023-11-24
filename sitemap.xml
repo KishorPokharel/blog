@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kishorpokharel.github.io/blog/jq-notes/</loc>
+    <loc>https://kishorpokharel.github.io/blog/posts/jq-notes/</loc>
     <lastmod>2023-11-24T07:54:11+05:45</lastmod>
   </url><url>
     <loc>https://kishorpokharel.github.io/blog/</loc>
-    <lastmod>2021-08-08T23:29:24+05:45</lastmod>
-  </url><url>
-    <loc>https://kishorpokharel.github.io/blog/posts/makefile/</loc>
-    <lastmod>2021-08-08T23:29:24+05:45</lastmod>
+    <lastmod>2023-11-24T07:54:11+05:45</lastmod>
   </url><url>
     <loc>https://kishorpokharel.github.io/blog/posts/</loc>
+    <lastmod>2023-11-24T07:54:11+05:45</lastmod>
+  </url><url>
+    <loc>https://kishorpokharel.github.io/blog/posts/makefile/</loc>
     <lastmod>2021-08-08T23:29:24+05:45</lastmod>
   </url><url>
     <loc>https://kishorpokharel.github.io/blog/categories/</loc>
