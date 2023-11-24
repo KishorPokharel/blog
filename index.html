@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.82.0" />
+  <meta name="generator" content="Hugo 0.110.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,13 +45,26 @@
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2023. All rights reserved. </p>
   </div>
 </aside>
 
     <main class="content container">
     <div class="posts">
 <article class="post">
+  <h1 class="post-title">
+    <a href="https://kishorpokharel.github.io/blog/jq-notes/">Jq Notes</a>
+  </h1>
+  <time datetime="2023-11-24T07:54:11&#43;0545" class="post-date">Fri, Nov 24, 2023</time>
+  Example 1 Suppose you have a json file data.json
+[ { &#34;chapterNumber&#34;: 1, &#34;body&#34;: &#34;A or B or C?&#34;, &#34;options&#34;: [&#34;A&#34;, &#34;B&#34;, &#34;C&#34;], &#34;answer&#34;: &#34;A&#34; }, { &#34;chapterNumber&#34;: 2, &#34;body&#34;: &#34;D or E or F?&#34;, &#34;options&#34;: [&#34;D&#34;, &#34;E&#34;, &#34;F&#34;], &#34;answer&#34;: &#34;E&#34; } ] and you want to use jq to transform it to
+[ { &#34;chapterNumber&#34;: 1, &#34;body&#34;: &#34;A or B or C?&#34;, &#34;options&#34;: [ { &#34;text&#34;: &#34;A&#34;, &#34;correct&#34;: true }, { &#34;text&#34;: &#34;B&#34;, &#34;correct&#34;: false }, { &#34;text&#34;: &#34;C&#34;, &#34;correct&#34;: false } ] }, { &#34;chapterNumber&#34;: 2, &#34;body&#34;: &#34;D or E or F?
+  
+  <div class="read-more-link">
+    <a href="https://kishorpokharel.github.io/blog/jq-notes/">Read More…</a>
+  </div>
+  
+</article><article class="post">
   <h1 class="post-title">
     <a href="https://kishorpokharel.github.io/blog/posts/makefile/">Makefile</a>
   </h1>

@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.82.0" />
+  <meta name="generator" content="Hugo 0.110.0">
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
       </ul>
     </nav>
 
-    <p>&copy; 2021. All rights reserved. </p>
+    <p>&copy; 2023. All rights reserved. </p>
   </div>
 </aside>
 
@@ -56,33 +56,33 @@
 <p>A <code>Makefile</code> is a text file that defines a set of rules to be executed. Then with the help of <code>make</code> utility you can execute the <code>target</code> which runs all command inside that rule. If you want to follow along, make sure you have the <code>make</code> utility installed on your machine.</p>
 <h3 id="basic-syntax">Basic syntax</h3>
 <p>Here is what the syntax looks like</p>
-<pre><code>target: prerequisites
+<pre tabindex="0"><code>target: prerequisites
 &lt;TAB&gt;command
 </code></pre><p>The prerequisites can be other targets and they are optional.</p>
 <h3 id="hello-world">Hello World</h3>
 <p>Now that you have the basic syntax let&rsquo;s print hello world using <code>Makefile</code></p>
 <p>Create a file <code>Makefile</code></p>
-<pre><code>$ touch Makefile
+<pre tabindex="0"><code>$ touch Makefile
 </code></pre><p>Add the following lines to the file</p>
-<pre><code>hello:
-	echo &quot;Hello World&quot;
+<pre tabindex="0"><code>hello:
+	echo &#34;Hello World&#34;
 </code></pre><p>Now run <code>make</code> in the terminal. Make sure you&rsquo;re in the right folder. You should see something like this as output.</p>
-<pre><code>$ make
-echo &quot;Hello World&quot;
+<pre tabindex="0"><code>$ make
+echo &#34;Hello World&#34;
 Hello World
 </code></pre><p>Notice that the <code>make</code> echoes the actual command.</p>
 <h3 id="supress-echoing-of-actual-command">Supress echoing of actual command</h3>
 <p>We don&rsquo;t want the actual echo command to be printed. To supress echoing the actual command we can use <code>@</code> in front of command like this</p>
-<pre><code>hello:
-   @echo &quot;Hello World&quot;
+<pre tabindex="0"><code>hello:
+   @echo &#34;Hello World&#34;
 </code></pre><p>Now if you run <code>make</code> again you can see the following output.</p>
-<pre><code>$ make
+<pre tabindex="0"><code>$ make
 Hello World
 </code></pre><h3 id="comments-on-makefile">Comments on Makefile</h3>
 <p>You can use <code>#</code> to create comment</p>
-<pre><code>#this target says hello
+<pre tabindex="0"><code>#this target says hello
 hello:
-	@echo &quot;Hello World&quot;
+	@echo &#34;Hello World&#34;
 </code></pre><h3 id="variables-and-environment-variables">Variables and Environment Variables</h3>
 <p>You can access environment variables using <code>${ENV}</code> this syntax.</p>
 <h3 id="shell-commands">Shell Commands</h3>
